@@ -47,6 +47,10 @@
         if (!inputTuple) {
             break;
         }
+        NSData * __unsafe_unretained imageKey = inputTuple->_first;
+        if (!imageKey) {
+            break;
+        }
         NSData * __unsafe_unretained imageData = inputTuple->_second;
         if (!imageData) {
             continue;
